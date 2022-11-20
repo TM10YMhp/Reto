@@ -1,0 +1,22 @@
+.action {
+  position: relative;
+}
+.action .menu {
+  background: var(--blue);
+  padding: 5px 10px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 120px;
+  border-radius: 5px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+}
+.action .menu.active{
+  top: 20px;
+  visibility: visible;
+  opacity: 1;
+}

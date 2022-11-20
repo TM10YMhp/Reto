@@ -1,0 +1,93 @@
+.container {
+  max-width: 280px;
+  min-width: 220px;
+  width: 220px;
+  border-radius: 15px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.container p {
+  margin: 0;
+}
+
+.logo {
+  height: 35px;
+  overflow: hidden;
+  text-align: end;
+}
+
+.logo img {
+  position: relative;
+  bottom: 10px;
+  height: 65px;
+  right: 15px;
+}
+
+.info {
+  background: var(--dark-blue);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.container:hover {
+  filter: brightness(1.2);
+}
+
+.hour {
+  font-size: 2.4rem;
+}
+.lastWeek {
+  font-size: .8rem;
+  color: var(--pale-blue);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 960px) {
+  .info {
+    padding: 20px;
+  }
+  .container {
+    min-width: 250px;
+  }
+  .time {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hour {
+    font-size: 1.2rem;
+  }
+}
+
+.Exercise {
+  background: var(--lime-green);
+}
+.Self {
+  background: var(--soft-orange);
+}
+.Social {
+  background: var(--violet);
+}
+.Study {
+  background: var(--red);
+}
+.Play {
+  background: var(--soft-blue);
+}
+.Work {
+  background: var(--light-red);
+}

@@ -1,0 +1,26 @@
+.container {
+  padding: 20px;
+  background: var(--very-dark-blue);
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 700px;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .cards {
+    max-width: 100%;
+  }
+}
