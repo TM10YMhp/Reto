@@ -30,3 +30,17 @@ html {
   --desaturated-blue: hsl(235, 45%, 61%);
   --pale-blue: hsl(236, 100%, 87%);
 }
+
+p {
+  margin: 0;
+}
+
+h5 {
+  color: var(--pale-blue);
+  margin: 0;
+  font-weight: 100;
+}
+
+.active {
+  color: #fff;
+}

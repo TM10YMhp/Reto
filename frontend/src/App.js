@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux'
+
 import { Card, CardUser } from 'components'
 import { setData } from 'store/slices/data'
 import s from 'assets/app.module.css'
 
-function App() {
+function App () {
   const dispatch = useDispatch()
   const { data } = useSelector(state => state.data)
 
@@ -23,7 +24,7 @@ function App() {
       <CardUser />
       <div
         className={s.cards}
-        onDragOver={(e) => void(e.preventDefault())}
+        onDragOver={(e) => void e.preventDefault()}
         onDrop={handleDrop}
       >
         {data.map((e, i) => <Card key={i} id={i} info={e}/> )}

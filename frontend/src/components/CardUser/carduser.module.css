@@ -5,15 +5,7 @@
   background: var(--dark-blue);
 }
 
-.active {
-  color: #fff;
-}
-
-.container p {
-  margin: 0;
-}
-
-.info {
+.infoUser {
   background: var(--violet);
   border-radius: 15px;
   padding: 20px 20px 65px 20px;
@@ -24,15 +16,23 @@
   align-items: flex-start;
 }
 
-.info img {
-  height: 65px;
-  border: 3px solid;
+.imageUser {
+  height: 70px;
+  width: 70px;
+}
+.imageUser::before {
+  content: '';
+  background: #fff;
+  width: inherit;
+  height: inherit;
+  position: absolute;
   border-radius: 50%;
 }
-
-.lastWeek {
-  font-size: .8rem;
-  color: var(--pale-blue);
+.imageUser img {
+  z-index: 1;
+  position: relative;
+  height: 65px;
+  border: 2.5px solid transparent;
 }
 
 .options {
@@ -44,10 +44,8 @@
   align-items: flex-start;
   gap: 20px;
 }
-.options p {
-  text-decoration: none;
-}
-.options p:hover {
+.options p:hover,
+.options p:active {
   color: #fff;
   cursor: pointer;
 }
@@ -60,10 +58,10 @@
     flex-grow: 1;
     max-width: 280px;
   }
-  .info, .options {
+  .infoUser, .options {
     flex-direction: row;
   }
-  .info {
+  .infoUser {
     justify-content: unset;
     gap: 15px;
     padding: 20px;
