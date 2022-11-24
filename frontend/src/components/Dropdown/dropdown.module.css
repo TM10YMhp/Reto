@@ -1,7 +1,7 @@
-.action {
+.container {
   position: relative;
 }
-.action .menu {
+.container .menu {
   background: var(--blue);
   padding: 5px 10px;
   position: absolute;
@@ -15,7 +15,7 @@
   visibility: hidden;
   opacity: 0;
 }
-.action .menu.active{
+.container .menu.active{
   top: 20px;
   visibility: visible;
   opacity: 1;

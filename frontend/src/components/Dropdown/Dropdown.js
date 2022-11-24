@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import logo from 'assets/images/icon-ellipsis.svg'
 
+import icon from 'assets/images/icon-ellipsis.svg'
 import s from './dropdown.module.css'
 
 export default function Dropdown () {
@@ -11,9 +11,9 @@ export default function Dropdown () {
   }
 
   return (
-    <div className={s.action} onClick={handleClick}>
-      <img src={logo} alt=''/>
-      <div className={isOpen ? `${s.menu} ${s.active}` : s.menu}>
+    <div className={s.container} onClick={handleClick}>
+      <img src={icon} alt='icon'/>
+      <div className={`${s.menu} ${isOpen ? s.active : ''}`}>
         <p>...</p>
       </div>
     </div>
